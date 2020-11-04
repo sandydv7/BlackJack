@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta name="viewport" charset="utf-8" content="width=device-width, initial-scale=1.0" >
+	<link rel="stylesheet" type="text/css" href="../css/main.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	
+	<title> Blackjack</title>
+</head>
+<body >
+	<div class="header">
+		<div class="navbar"> <b> BLACKJACK </b></div>
+	</div>
+	<div id="homeFrame" class="player-board">
+		<h1>! Welcome to BlackJack !</h1>
+		<input class="button" type= "button" name="playbutton" id="playButton" value="Play" onclick="Play()">
+		<input class="button" type="button" name="moregame" id="moreGames"  value="More Games" onclick="MoreGames()"> 
+	</div>
+	<div id="betting" style="display: none;" class="setBet">
+		<div class="navButtons">
+			<ul>
+				<li><button class="btn btn1" onclick="Home()"><i class="fa fa-home fa-2x"></i> </button></li>
+				<li><button class="btn btn1" onclick="Restart()"><i class="fa fa-refresh fa-2x"></i> </button> </li>
+				<li><button class="btn btn1" onclick="alert('Set the bet')"><i class="fa fa-question fa-2x"></i> </button></li>
+			</ul>
+		</div>
+	<div style="clear: both;"></div>
+
+	<div id="setchips">
+		<div><h1>Set Your Bets</h1> </div> 
+
+		<div class="currency"> 
+			<ul>
+				<li> <img id="chip1" src="../resources/chip1.jpg" alt="1$" onclick="CalculateDeal(1)"> </li>
+
+				<li> <img id="chip10" src="../resources/chip10.jpg" alt="10$" onclick="CalculateDeal(10)"> </li>
+
+				<li> <img id="chip50" src="../resources/chip50.jpg" alt="50$" onclick="CalculateDeal(50)"> </li>
+
+				<li> <img id="chip500" src="../resources/chip500.jpg" alt="500$" onclick="CalculateDeal(500)"> </li>
+			</ul>
+		</div>
+		<div id="Bet" class="totalBet"> </div>
+		<input style="display: none;" class="button" type= "button" name="dealbutton" id="dealButton" value="Deal" onclick="Deal()">
+
+	</div>
+	</div>
+	<div id="mainContent" style="display: none;" class="setBet">
+		<div class="navButtons">
+			<ul>
+				<li><button class="btn btn1" onclick="Home()"><i class="fa fa-home fa-2x"></i> </button></li>
+				<li><button class="btn btn1" onclick="Restart()"><i class="fa fa-refresh fa-2x"></i> </button> </li>
+				<li><button class="btn btn1" onclick="Help()"><i class="fa fa-question fa-2x"></i> </button></li>
+			</ul>
+		</div>
+	
+	<div style="clear: both;"></div>
+		<div class="content" >
+			<input class="button" type= "button" name="hitbutton" id="hitButton" value="Hit" onclick="Hit()">
+			<input class="button" type="button" name="stand" id="standButton"  value="Stand" onclick="StandClick()"> 
+		</div>
+		<div class="result">
+			<center> <h1  id="result"></h1> </center>
+		</div>
+		<div style="clear: both;"></div>
+
+		<div>
+			<div class="player1" id="player1">
+				<b> <h2 id="player1Points"></h2></b>
+			</div>
+			<div class="player2" id="player2">
+				<b> <h2 id="player2Points"></h2></b>
+			</div>
+		</div>
+		<div style="clear: both;"></div>
+	</div>
+	<script type="text/javascript" src="../javascript/mainjs.js"></script>
+</body>
+</html>

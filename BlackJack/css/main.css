@@ -1,0 +1,159 @@
+body{
+
+	background-image:url('../resources/pngegg.png');
+  background-color: #cccccc;
+}
+h1{
+  text-align-last: center;
+  color: red;
+}
+.header{
+	border-bottom: 3px solid blue;
+	height: 10%;
+}
+.navbar{
+	color:red;
+
+	//font-family: verdana;
+
+	text-align: center;
+	font-size: 50px;
+}
+.navbar img{
+
+	width: 100px;
+	height: 50px;
+}
+.player-board{
+	background-image:url('../resources/block-background.jpg');
+	background-size: 100% 800px;
+	background-repeat: no-repeat;
+	background-color: lightgrey;
+  	width: 70%;
+  	min-height: 800px;
+  	position: relative;
+  	border: 1px solid green;
+  	border-radius: 5px;
+  	padding: auto;
+  	margin: auto;
+}
+.button{
+    margin: 10px;
+    background-color:  darkblue;
+    color: white;
+    font-weight: bold;
+    padding: 5px 30px;
+    border-radius: 5px;
+    font-size: 20px;
+}
+iframe {
+    width: 100%;
+    height: 100%;
+    overflow: hidden; 
+}
+.button :active{
+  background-color: #3e8e41
+  opacity: .7;
+
+}
+.setBet{
+  background-image: url('../resources/setBet.jpg');
+  background-color: #cccccc;
+  background-size: 100% 800px;
+  width: 70%;
+  min-height: 800px;
+  position: relative;
+  border: 1px solid green;
+  border-radius: 5px;
+  padding: auto;
+  margin: auto;
+}
+.setBet h1{
+  font-size: 40px;
+  color:white;
+  text-align: center;
+  font-family: verdana;
+}
+.currency ul{
+  text-align: center;
+}
+.currency ul li{
+  
+  display: inline;
+  text-decoration: none;
+  padding: 10px;
+}
+.currency ul li img{
+  width: 170px;
+  height: 190px;
+  border-radius: 50%;
+  box-shadow: 2px 5px;
+  border: 5px solid red;
+}
+.currency ul li img:hover {
+  opacity: .7;
+}
+.totalBet{
+  color: white;
+  font-size: 50px;
+  font-family: verdana;
+}
+.navButtons ul li{
+  padding: 10px;
+  display: inline;
+
+}
+.btn1{
+  margin: 5px;
+  float: right;
+}
+.player1 {
+  margin: 10px;
+  position: relative;
+  width: 45%;
+  float: left;
+  height: 100%;
+  border: 6px solid red;
+  background-color: #585e57;
+  opacity:0.9;
+  z-index: 1010101010
+}
+
+.player2{
+  margin: 10px;
+  position: relative;
+  width: 45%;
+  float: left;
+  height: 100%;
+  z-index: 1010101010;
+  border: 6px solid red;
+  background-color: #585e57;
+  opacity:0.9;
+}
+.player1 img{
+  height: 200px;
+  padding: 10px;
+  width: 150px;
+  border-radius: 20px;
+ 
+}
+.player2 img{
+  height: 200px;
+  padding: 10px;
+  width: 150px;
+  border-radius: 20px;
+  
+}
+#player1Points{
+  margin: 10px;
+  color: white;
+  font-family: sans-serif;
+}
+#player2Points{
+  margin: 10px;
+  color: white;
+  font-family: sans-serif;
+}
+.result h1{
+  color: #091f0f;
+}
